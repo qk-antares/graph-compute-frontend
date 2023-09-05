@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  border: 1px solid #d9d9d9;
+
+  .xflow-workspace {
+    position: relative;
+    height: 420px;
+    border: 1px solid #d9d9d9;
+  }
+
+  .xflow-workspace-toolbar-top {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .xflow-x6-canvas {
+    background: #f9f9f9;
+  }
+
+  .xflow-canvas-root {
+    margin: 0;
+  }
+
+  .react-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1px solid #873bf4;
+    border-radius: 50%;
+    &:hover {
+      background-color: rgb(234, 219, 255) !important;
+    }
+  }
+
+  .x6-node-selected {
+    .react-node {
+      background-color: rgb(254, 254, 255);
+      border: 3px solid rgb(135, 59, 244);
+      box-shadow: 0 0 3px 3px rgba(135, 59, 244, 0.2);
+      &:hover {
+        background-color: rgba(227, 244, 255, 0.45);
+      }
+    }
+  }
+}
